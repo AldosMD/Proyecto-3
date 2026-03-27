@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <h1>Registro para nuevo evento</h1>
+    <hr>
+
+    <form id="formulario" method="post">
+        <br>
+
+        <label for="name">Nombre del planeador</label>
+        <input type="text" id="name" name="name" placeholder="Ingresa tu nombre completo" required>
+        <span id="errorName" class="error"></span>
+        <br>
+            
+        <label for="name">Nombre del evento</label>
+        <input type="text" id="nameE" name="nameE" placeholder="Ingresa el nombre de tu evento" required>
+        <span id="errorName" class="error"></span>
+        <br>
+
+        <label for="date">Fecha</label>
+    <input type="date" id="fecha" name="fecha" required>
+    <span id="errorDate" class="error"></span>
+        <br>
+
+        <label for="location">Ubicacion del evento</label>
+        <span id="errorUbi" class="error"></span>
+        <select name="ubicacion" id="ubicacion" required>
+            <option value="" disabled selected>Elija la locacion de su futuro evento</option>
+            <option value="EGNP">Estadio GNP seguros, CDMX</option>
+            <option value="FL">Foro Lando, Toluca</option>
+            <option value="FT">Foro Thay, Lerma</option>
+            <option value="PD">Palacio de los deportes, CDMX</option>
+            <option value="PC">Pepsi Center Wtc, CDMX</option>
+            <option value="TMC">Teatro Milan, Cuauhtemoc</option>
+            <option value="TMD">Teatro Morelos, Distrito fabela</option>
+            <option value="TMT">Teatro Morelos, Toluca</option>
+            <option value="TQ">Teatro Quimera, Metepec</option>
+            <option value="SEUG">Salon "El Ultimo Guerrero", Toluca</option>
+            <option value="SD">Salon Dalia, Toluca</option>
+        </select>
+        <br>
+
+         <label for="tipo">Tipo de evento</label>
+    <span id="errorTipo" class="error"></span>
+    <select name="tipo" id="tipo" required>
+        <option value="" disabled selected>Elija su tipo de evento</option>
+        <option value="">Ceremonia de graduacion de Primaria</option>
+        <option value="">Ceremonia de graduacion de Secundaria</option>
+        <option value="">Ceremonia de graduacion de Bachillerato</option>
+        <option value="">Ceremonia de graduacion de Licenciatura/Ingenieria</option>
+        <option value="C3T">Comida de tres tiempos para boda</option>
+        <option value="CPB">Comida de tres tiempos para boda (acceso permitido solo para personas +18)</option>
+        <option value="CMR">Concierto musical de Rock</option>
+        <option value="CMBN">Concierto musical de Banda</option>
+        <option value="CMK">Concierto musical de K-pop</option>
+        <option value="CMB">Concierto musical de Bachata</option>
+        <option value="CMS">Concierto musical sinfonico</option>
+        <option value="CMPR">Concierto musical de Pop Rock</option>
+        <option value="CML">Concierto de musica latina</option>
+        <option value="CMRP">Concierto musical de Rap</option>
+        <option value="CMT">Concierto musical de Trap</option>
+        <option value="CMC">Concierto musical de Cumbia</option>
+        <option value="FF">Fiesta familiar (todas las edades)</option>
+        <option value="FFN">Fiesta Familiar (+18)</option>
+        <option value="OT">Obra de teatro infantil</option>
+        <option value="OTT">Obra de teatro para todas las edades</option>
+        <option value="OT">Obra de teatro no apta para todas las edades (+18)</option>
+    </select>
+        <br>    
+
+    <label for="phone">Telefono</label>
+    <input type="phone" id="phone" name="phone" placeholder="Ingresa tu numero de telefono" required>
+    <span id="errorPhone" class="errorPhone"></span>
+        <br>
+
+        <label for="email">Correo electronico</label>
+        <input type="email" name="email" id="email" placeholder="ingresa tu email" required>
+        <span id="email" class="errorEmmail"></span>
+        <br>
+
+    <button type="submit">Registrar evento</button>
+    <button type="reset">Corregir elecciones</button>
+    <script src="js/validator.js"></script>
+    </form>
+    <p id="message" class="success"></p>
+
+</body>
+</html>
