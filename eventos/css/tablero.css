@@ -15,7 +15,7 @@ header {
     border-radius: 20px;
 }
 
-/* Botón para crear nuevo evento */
+/*boton para crear nuevo evento*/
 #nuevo {
       background: rgb(92, 151, 92);
     color: rgb(255, 255, 255);
@@ -34,9 +34,9 @@ header {
     background: rgb(72, 131, 72);
 }
 
-/* Contenedor blanco claro */
+/*recuadro donde apareceran los eventos*/
 .contenedor {
-    background: #f9f9f9;
+    background: lavender;
     margin: 30px auto;
     padding: 20px;
     width: 80%;
@@ -44,30 +44,33 @@ header {
     box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
-/* Barra superior con buscador y filtro */
+/*buscador y filtro */
 .barra-superior {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 300px;
+    color: green;
 }
 
 .buscador input {
     padding: 10px;
     border: none;
-    border-radius: 5px;
-    width: 250px;
-    background: rgb(92, 151, 92);
-    color: white;
+    border-radius: 50px;
+    width: 200px;
+    background: rgb(125, 204, 125);
+    color: green;
     font-weight: bold;
+    font-size: 0.9rem;
 }
 
 .filtro select {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background: rgb(200, 50, 50);
-    color: white;
+    background: rgb(125, 204, 125);
+    color: green;
     font-weight: bold;
+    font-size: 0.9rem;
 }
 
 /* Cada evento listado */
