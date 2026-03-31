@@ -50,27 +50,47 @@
     <span id="errorTipo" class="error"></span>
     <select name="tipo" id="tipo" required>
         <option value="" disabled selected>Elija su tipo de evento</option>
-        <option value="">Ceremonia de graduacion de Primaria</option>
-        <option value="">Ceremonia de graduacion de Secundaria</option>
-        <option value="">Ceremonia de graduacion de Bachillerato</option>
-        <option value="">Ceremonia de graduacion de Licenciatura/Ingenieria</option>
-        <option value="C3T">Comida de tres tiempos para boda</option>
-        <option value="CPB">Comida de tres tiempos para boda (acceso permitido solo para personas +18)</option>
-        <option value="CMR">Concierto musical de Rock</option>
-        <option value="CMBN">Concierto musical de Banda</option>
-        <option value="CMK">Concierto musical de K-pop</option>
-        <option value="CMB">Concierto musical de Bachata</option>
-        <option value="CMS">Concierto musical sinfonico</option>
+        
+        <!--no supe como hacer para que no me apareciera el nombre completo del tipo de evento,
+        anteriormente lo tenia asi:
+        
         <option value="CMPR">Concierto musical de Pop Rock</option>
-        <option value="CML">Concierto de musica latina</option>
-        <option value="CMRP">Concierto musical de Rap</option>
-        <option value="CMT">Concierto musical de Trap</option>
-        <option value="CMC">Concierto musical de Cumbia</option>
-        <option value="FF">Fiesta familiar (todas las edades)</option>
-        <option value="FFN">Fiesta Familiar (+18)</option>
-        <option value="OT">Obra de teatro infantil</option>
-        <option value="OTT">Obra de teatro para todas las edades</option>
-        <option value="OT">Obra de teatro no apta para todas las edades (+18)</option>
+        
+        pero decidi cambiarlo teniendo exactamente el mismo nombre para que ahora si me mostrara el 
+        nombre completo quedando asi como estan las opciones de abajo
+        -->
+        <option value="Ceremonia de graduacion de Primaria">Ceremonia de graduacion de Primaria</option>
+        <option value="Ceremonia de graduacion de Secundaria">Ceremonia de graduacion de Secundaria</option>
+        <option value="Ceremonia de graduacion de Bachillerato">Ceremonia de graduacion de Bachillerato</option>
+        <option value="Ceremonia de graduacion de Licenciatura/Ingenieria">Ceremonia de graduacion de Licenciatura/Ingenieria</option>
+        <option value="Concierto de musica de ambiente para una boda">Concierto de musica de ambiente para una boda</option>
+        <option value="Concierto de musica de ambiente para una boda (acceso permitido solo para personas +18)">Concierto de musica de ambiente para una boda (acceso permitido solo para personas +18)</option>
+        <option value="Concierto musical de Rock">Concierto musical de Rock</option>
+        <option value="Concierto musical de Rock +18">Concierto musical de Rock (acceso solo para personas +18)</option>
+        <option value="Concierto musical de Banda">Concierto musical de Banda</option>
+        <option value="Concierto musical de Banda +18">Concierto musical de Banda (acceso solo para personas +18)</option>
+        <option value="Concierto musical de K-pop">Concierto musical de K-pop</option>
+        <option value="Concierto musical de K-pop +18">Concierto musical de K-pop (acceso solo para personas +18)</option>
+        <option value="Concierto musical de Bachata">Concierto musical de Bachata</option>
+        <option value="Concierto musical de Bachata +18">Concierto musical de Bachata (acceso solo para personas +18)</option>
+        <option value="Concierto musical sinfonico">Concierto musical sinfonico</option>
+        <option value="Concierto musical sinfonico +18">Concierto musical sinfonico (acceso solo para personas +18)</option>
+        <option value="Concierto musical de Pop Rock">Concierto musical de Pop Rock</option>
+        <option value="Concierto musical de Pop Rock +18">Concierto musical de Pop Rock (acceso solo para personas +18)</option>
+        <option value="Concierto de musica latina">Concierto de musica latina</option>
+        <option value="Concierto de musica latina +18">Concierto de musica latina (acceso solo para personas +18)</option>
+        <option value="Concierto musical de Rap">Concierto musical de Rap</option>
+        <option value="Concierto musical de Rap +18">Concierto musical de Rap (acceso solo para personas +18)</option>
+        <option value="Concierto musical de Trap">Concierto musical de Trap</option>
+        <option value="Concierto musical de Trap +18">Concierto musical de Trap (acceso solo para personas +18)</option>
+        <option value="Concierto musical de Cumbia">Concierto musical de Cumbia</option>
+        <option value="Concierto musical de Cumbia +18">Concierto musical de Cumbia (acceso solo para personas +18)</option>
+
+        <option value="Fiesta familiar (todas las edades)">Fiesta familiar (todas las edades)</option>
+        <option value="Fiesta Familiar (+18)">Fiesta Familiar (+18)</option>
+        <option value="Obra de teatro infantil">Obra de teatro infantil</option>
+        <option value="Obra de teatro para todas las edades">Obra de teatro para todas las edades</option>
+        <option value="Obra de teatro no apta para todas las edades (+18)">Obra de teatro no apta para todas las edades (+18)</option>
     </select>
         <br>    
 
@@ -79,16 +99,18 @@
     <span id="errorPhone" class="errorPhone"></span>
         <br>
 
-        <label for="email">Correo electronico</label>
+    <label for="email">Correo electronico</label>
         <input type="email" name="email" id="email" placeholder="ingresa tu email" required>
-        <span id="email" class="errorEmmail"></span>
+        <span id="errorEmail" class="errorEmmail"></span>
         <br>
+    
+        <button type="submit" id="RE">Registrar evento</button>
+        <br>
+        <button type="reset">Corregir elecciones</button>
+ 
+        <p id="message" class="success"></p>
 
-    <button type="submit">Registrar evento</button>
-    <button type="reset">Corregir elecciones</button>
-    <script src="js/validator.js"></script>
     </form>
-    <p id="message" class="success"></p>
-
+    <script src="js/nevento.js"></script>
 </body>
 </html>

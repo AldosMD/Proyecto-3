@@ -8,27 +8,27 @@
 </head>
 <body>
     <header>Eventos a futuro</header>
+    
     <br>
     <a href="eventos/nuevo.html">
         <button type="button" id="nuevo">Crear nuevo evento</button>
     </a>
     <br>
 
-    <!--Barra de busqueda al igual qeu filtro para mostrar todos o solo los cercanos o prontos a ser-->
-    <div class="contenedor">
-        <div class="barra-superior">
-            <div class="buscador">
-                <input type="text" placeholder="Buscar evento">
-            </div>
-            <div class="filtro">
-                <select>
-                    <option value="">Filtrar por:</option>
-                    <option value="fecha">Todos</option>
-                    <option value="categoria">Solo futuros</option>
-                </select>
-            </div>
-        </div>
-        
 
+    <div class="contenedor">
+            <div class="filtro">
+            <label style="color: green; font-weight: bold; margin-right: 15px;">
+            <input type="radio" name="filtroFecha" value="todos" checked> Todos
+            </label>
+            <label style="color: green; font-weight: bold;">
+            <input type="radio" name="filtroFecha" value="cercanos"> Más cercanos
+            </label>
+            </div>
+            <!--para mostrar los futuros eventos-->
+        <div id="listaEventos"></div>
+    </div>
+    
+    <script src="js/eventos.js"></script>
 </body>
 </html>

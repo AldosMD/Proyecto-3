@@ -1,0 +1,105 @@
+body {
+    text-align: center;
+    background-color: #18a274;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: rgb(90, 133, 90);
+    color: lavender; 
+    padding: 20px 30px;
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+    font-size: 2.5em;
+    border-radius: 20px;
+}
+
+
+#formulario {
+    background: lavender;
+    margin: 0 auto 40px auto;
+    padding: 30px 40px;
+    width: 60%;
+    border-radius: 15px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+label {
+    display: block;
+    color: rgb(72, 131, 72);
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="phone"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid rgb(151, 236, 224);
+    border-radius: 8px;
+    box-sizing: border-box; 
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: #f8f8ff; 
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus, 
+select:focus {
+    border-color: rgb(90, 133, 90);
+    outline: none;
+    box-shadow: 0 0 8px rgba(90, 133, 90, 0.4);
+}
+
+button {
+    background: rgb(92, 151, 92);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 15px 0;
+    border-radius: 5px;
+    cursor: pointer; 
+    font-weight: 700;
+    font-size: 1rem;
+    width: 48%;
+    margin-top: 25px;
+    transition: transform 0.2s, background 0.2s; 
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: rgb(72, 131, 72);
+}
+
+
+button[type="reset"] {
+    background: rgb(200, 50, 50);
+    float: left; 
+}
+
+button[type="reset"]:hover {
+    background: rgb(170, 40, 40);
+}
+
+.error, .errorPhone, .errorEmmail {
+    color: rgb(200, 50, 50);
+    font-size: 0.85em;
+    display: block;
+    margin-top: 5px;
+}
+
+.success {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 30px;
+    clear: both;
+}

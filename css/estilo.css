@@ -28,7 +28,7 @@ body{
 .btn-apply:hover{
     transform: scale(1.1);
     background: rgb(72, 131, 72);
-}}
+}
 
 legend{
      font-size: 2.5em;

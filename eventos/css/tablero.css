@@ -1,32 +1,33 @@
 body {
     text-align: center;
     background-color: #18a274;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', sans-serif;
     margin: 0;
     padding: 0;
 }
 
 header {
     background-color: rgb(90, 133, 90);
-    color: lavender;
+    color: lavender; 
     padding: 20px 30px;
     text-align: center;
     font-size: 3.5em;
     border-radius: 20px;
 }
 
-/*boton para crear nuevo evento*/
 #nuevo {
-      background: rgb(92, 151, 92);
+    background: rgb(92, 151, 92);
     color: rgb(255, 255, 255);
     border: none;
     padding: 16px 32px;
     border-radius: 5px;
-    cursor: pointer;
+    cursor: pointer; 
+    /*para texto en negrita*/
     font-weight: 700;
     font-size: 0.9rem;
     width: 35%;
     text-align: center;
+    transition: transform 0.2s, background 0.2s; 
 }
 
 #nuevo:hover {
@@ -34,33 +35,12 @@ header {
     background: rgb(72, 131, 72);
 }
 
-/*recuadro donde apareceran los eventos*/
 .contenedor {
     background: lavender;
     margin: 30px auto;
     padding: 20px;
-    width: 80%;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-}
-
-/*buscador y filtro */
-.barra-superior {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 300px;
-    color: green;
-}
-
-.buscador input {
-    padding: 10px;
-    border: none;
-    border-radius: 50px;
-    width: 200px;
-    background: rgb(125, 204, 125);
-    color: green;
-    font-weight: bold;
-    font-size: 0.9rem;
+    width: 80%; 
+    border-radius: 15px;
 }
 
 .filtro select {
@@ -73,27 +53,25 @@ header {
     font-size: 0.9rem;
 }
 
-/* Cada evento listado */
 .evento {
-    background: white;
+    background: rgb(151, 236, 224);
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 15px;
     margin-bottom: 15px;
-    display: flex;
+    /*para poner el texto a la izquierda y los botones a la derecha */
+    display: flex; 
     justify-content: space-between;
     align-items: center;
 }
 
-/* Botones de acciones */
 .acciones button {
     margin-left: 10px;
     padding: 8px 12px;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
     font-weight: bold;
-    transition: transform 0.2s;
+    transition: transform 0.2s; 
 }
 
 .acciones button:hover {
@@ -101,7 +79,7 @@ header {
 }
 
 .editar {
-    background: rgb(72, 131, 200);
+    background: rgb(72, 131, 200); 
     color: white;
 }
 
